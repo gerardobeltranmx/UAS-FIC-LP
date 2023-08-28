@@ -2,5 +2,6 @@
 ## Facultad de Informática Culiacán
 ### Lenguajes de Programación
 
-- Materiales:
+
+- Presentaciones:
     https://drive.google.com/drive/folders/1zVahJfviqlpzWUW5vFEpi9Wc4YD-BAdL?usp=sharing
