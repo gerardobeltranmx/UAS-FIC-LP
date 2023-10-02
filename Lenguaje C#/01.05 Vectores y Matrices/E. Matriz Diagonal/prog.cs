@@ -20,7 +20,7 @@ class Principal {
         }
       }
       int valor = mat[0,0];
-      for (int i=0; i<N && enc==true; i++){
+      for (int i=1; i<N && enc==true; i++){
           if (mat[i,i]!=valor){
              enc = false;
           }
