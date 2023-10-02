@@ -6,11 +6,11 @@ class Principal {
       int N;
       int [,] mat;
       bool enc=true; 
-      mat = new int [N,N];
       string linea;
       string [] datos;
       // se establece tamaño a la matriz
       N = int.Parse(Console.ReadLine());
+      mat = new int [N,N];
       // entrada de datos
       for (int i=0; i<N; i++){
           linea = Console.ReadLine();
@@ -19,9 +19,7 @@ class Principal {
           mat[i,j]=int.Parse(datos[j]);
         }
       }
-
       int valor = mat[0,0];
-
       for (int i=0; i<N && enc==true; i++){
           if (mat[i,i]!=valor){
              enc = false;
