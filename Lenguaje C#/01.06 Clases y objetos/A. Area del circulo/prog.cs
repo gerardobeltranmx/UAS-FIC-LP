@@ -2,29 +2,39 @@
 using System;
 class Principal {
   static void Main() {
+    int radio;
+    double area;
+    Circulo fig, llanta; // Crea el objeto circulo
    
+    radio = int.Parse(Console.ReadLine());
+    fig = new Circulo(); // Asigna memoria
+    fig.CambiarRadio(radio); // establece el radio
+    area = fig.ObtenerArea(); // Obtiene el area
+    Console.WriteLine("{0:F2}",area);
+/*
+    llanta = new Circulo();
+    llanta.CambiarRadio(100);
+    area = llanta.ObtenerArea();
+    Console.WriteLine(area);
+*/
 
 
-   
-  }
+   }
 
-  class Circulo(){
+  class Circulo{
       private int radio ;
 
-      int ObtenerRadio(){
+      public int ObtenerRadio(){
           return radio;
       }
-
-      void CambiarRadio(int radio){
+      public void CambiarRadio(int radio){
         this.radio = radio;
       }
-
-      float ObtenerArea(){
-        float area;
+      public double ObtenerArea(){
+        double area;
         area = 3.14159 * radio * radio; 
         return area;
       }
-
   }
 
 }
