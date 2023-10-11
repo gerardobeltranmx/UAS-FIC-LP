@@ -7,19 +7,13 @@ class Principal {
 
    radio = double.Parse(Console.ReadLine());
    altura = double.Parse(Console.ReadLine());
-   
+
    objCilindro = new Cilindro();
-
    objCilindro.dimension(radio, altura);
-
 
    Console.WriteLine (objCilindro.Area());
    Console.WriteLine (objCilindro.Volumen());
-    
-
-   
   }
-  
 }
 class Cilindro {
   private double radio, altura;
@@ -31,7 +25,7 @@ class Cilindro {
   }
   public double Area(){
     double area;
-    area = PI * radio * radio;
+    area = 2* PI * radio * radio + 2 * PI * radio * radio;
     return area;
   }
   public double Volumen(){
