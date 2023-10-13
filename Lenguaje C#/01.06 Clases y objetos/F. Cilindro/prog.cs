@@ -1,4 +1,3 @@
-
 using System;
 class Principal {
   static void Main() {
@@ -8,8 +7,8 @@ class Principal {
    radio = double.Parse(Console.ReadLine());
    altura = double.Parse(Console.ReadLine());
 
-   objCilindro = new Cilindro();
-   objCilindro.dimension(radio, altura);
+   objCilindro = new Cilindro(radio, altura);
+   //objCilindro.dimension(radio, altura);
 
    Console.WriteLine (objCilindro.Area());
    Console.WriteLine (objCilindro.Volumen());
@@ -18,6 +17,17 @@ class Principal {
 class Cilindro {
   private double radio, altura;
   private const double PI = 3.1416;
+  
+  
+  public Cilindro(){
+      this.radio = 10;
+      this.altura = 20;
+  }
+
+  public Cilindro(double radio, double altura){
+      this.radio = radio;
+      this.altura = altura;
+  }
 
   public void dimension(double radio, double altura){
     this.radio = radio;

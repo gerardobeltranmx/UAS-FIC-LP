@@ -8,21 +8,15 @@ class Principal {
    
     radio = int.Parse(Console.ReadLine());
     fig = new Circulo(); // Asigna memoria
-    fig.CambiarRadio(radio); // establece el radio
+    //fig.CambiarRadio(radio); // establece el radio
     area = fig.ObtenerArea(); // Obtiene el area
     Console.WriteLine("{0:F2}",area);
-/*
-    llanta = new Circulo();
-    llanta.CambiarRadio(100);
-    area = llanta.ObtenerArea();
-    Console.WriteLine(area);
-*/
-
 
    }
 
   class Circulo{
       private int radio ;
+
 
       public int ObtenerRadio(){
           return radio;
