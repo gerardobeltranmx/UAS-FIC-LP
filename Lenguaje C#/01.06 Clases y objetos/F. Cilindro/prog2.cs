@@ -3,12 +3,11 @@ using System;
 class Principal {
   static void Main() {
    
-    Cilindro obj;
 
-    obj = new Cilindro();
+    Cilindro obj = new Cilindro(10, 20);
 
-    obj.CambiarRadio(10);
-    obj.CambiarAltura(20);
+   // obj.CambiarRadio(10);
+   // obj.CambiarAltura(20);
 
     Console.WriteLine(obj.ObtenerVolumen());
 
@@ -18,7 +17,10 @@ class Principal {
 class Circulo{
 
         private double radio;
-
+        // Constructor con argumentos
+        public Circulo(double r){
+         radio=r; 
+        } 
         public void CambiarRadio(double r){
               radio=r;
         }
@@ -35,7 +37,10 @@ class Circulo{
 
 class Cilindro:Circulo{
        private double altura;
-                 
+      public Cilindro(double r, double h): base(r){
+           altura=h;
+       }             
+           
        public void CambiarAltura(double h){
               altura=h;
         }
