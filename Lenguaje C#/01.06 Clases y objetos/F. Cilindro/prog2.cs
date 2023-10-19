@@ -12,9 +12,6 @@ class Principal {
 
     Console.WriteLine(obj.ObtenerVolumen());
 
-
-
-   
   }
 }
 
