@@ -34,17 +34,14 @@ class Circulo{
 }
 
 class Cilindro:Circulo{
-
        private double altura;
-                   
+                 
        public void CambiarAltura(double h){
               altura=h;
         }
-
       public double ObtenerAltura(){
           return altura;
       }
-
       public double ObtenerVolumen(){
            return ObtenerArea()*ObtenerAltura();
       }
