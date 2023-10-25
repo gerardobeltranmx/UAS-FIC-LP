@@ -9,7 +9,7 @@ class Principal {
     radio = int.Parse(Console.ReadLine());
     fig = new Circulo(); // Asigna memoria
     //fig.CambiarRadio(radio); // establece el radio
-    fig.Radio = 20;
+    fig.Radio = radio;
     //area = fig.ObtenerArea(); // Obtiene el area
     Console.WriteLine("{0:F2}",fig.Area);
    }
