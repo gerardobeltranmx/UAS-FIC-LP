@@ -9,13 +9,31 @@ class Principal {
     radio = int.Parse(Console.ReadLine());
     fig = new Circulo(); // Asigna memoria
     //fig.CambiarRadio(radio); // establece el radio
-    area = fig.ObtenerArea(); // Obtiene el area
-    Console.WriteLine("{0:F2}",area);
-
+    fig.Radio = 20;
+    //area = fig.ObtenerArea(); // Obtiene el area
+    Console.WriteLine("{0:F2}",fig.Area);
    }
-
   class Circulo{
       private int radio ;
+       // Propiedad Radio
+        public int Radio
+        {
+            set {
+                if (value > 0)
+                    radio = value;
+            }
+            get {
+                return radio;
+            }
+        }
+        // Propiedad Area
+        public double Area
+        {
+            get {
+                return ObtenerArea();
+            }
+        }
+
 
 
       public int ObtenerRadio(){
