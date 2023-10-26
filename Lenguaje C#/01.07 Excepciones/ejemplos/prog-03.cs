@@ -13,7 +13,6 @@ class HelloWorld {
             c = a / b;
 
             Console.WriteLine(c);
-
         }    
         catch (FormatException error ){
             Console.WriteLine("Error en el format de entrada");
