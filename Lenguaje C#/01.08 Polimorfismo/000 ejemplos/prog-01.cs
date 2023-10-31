@@ -9,7 +9,7 @@ class Principal {
       obj = new cuadrado(5);
       Console.WriteLine("El Área del Cuadrado es {0}", obj.Area ());
   
-  }
+  
 
       obj = new triangulo(5,20);
       Console.WriteLine("El Área del Triangulo es {0}", obj.Area ());
@@ -64,7 +64,7 @@ class circulo : figura{
         }
   }
 class triangulo: figura{
-    private _base, altura
+    private double _base, altura;
     
     public triangulo(double _base, double altura){
         this._base = _base;
