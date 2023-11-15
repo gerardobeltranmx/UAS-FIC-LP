@@ -35,6 +35,13 @@ class Principal {
             }
         }
    } 
+
+
+    if (pila.Count == 0 && error == false)
+        Console.WriteLine("SI");
+    else 
+        Console.WriteLine("NO");    
+
  
    
   }
