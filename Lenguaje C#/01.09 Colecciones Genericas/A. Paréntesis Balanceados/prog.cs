@@ -8,13 +8,10 @@ class Principal {
    string cadena;
    char car, simbolo; 
    bool error = false;
+
    cadena = Console.ReadLine();
-
-
    for (int i=0; i < cadena.Length && error==false ; i++ ){
-
         car = cadena[i];
-
         if (car=='{' || car=='[' || car == '(' ){
             pila.Push(car);
         }
@@ -31,12 +28,9 @@ class Principal {
                case '(':
                   if (car!=')') error= true;  
                   break;  
-                
             }
         }
    } 
-
-
     if (pila.Count == 0 && error == false)
         Console.WriteLine("SI");
     else 
